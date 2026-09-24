@@ -34,6 +34,7 @@ h1{
   opacity: 50%;
   text-shadow: 3px 3px black;
 }
+
 .nav-container{
     display: flex;
     flex-direction: row;
@@ -53,6 +54,8 @@ a{
     display: flex;
     flex-direction: row;
     opacity: 70%;
+    padding: 10px 10px;
+    margin: 5px 0px;
 }
 
 video{
@@ -67,3 +70,14 @@ video{
     padding: 10px 10px;
     margin: 5px 0px;
 }
+
+footer{
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.wiki-link{
+    opacity: 80%;
+    background-color: black;
+}
+

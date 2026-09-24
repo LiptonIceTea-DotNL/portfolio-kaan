@@ -1,0 +1,121 @@
+*{
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px black;
+}
+
+body{
+    background-image: url(/images/nacht.jpg);
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: xx-large;
+    background-color: rgba(0, 0, 0, 0.39);
+}
+
+img{
+    height: 60px;
+    margin: 10px;
+    opacity: 15%;
+}
+
+h1{
+  text-align: center;
+  color:rgb(50, 115, 255);
+  font-size: 60px;
+  opacity: 50%;
+  text-shadow: 3px 3px black;
+}
+
+a{
+  padding: 25px 20px;
+  background-color: #007bff;
+  opacity: 30%;
+  text-shadow: 3px 3px black;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: row;
+    height: 275px;
+    opacity: 70%;
+    background-color: rgb(7, 110, 110);
+    justify-content: space-evenly;
+}
+
+.text-container{
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.text{
+    color: black;
+    height: 50px;
+    width: 300px;
+}
+
+.continent-container{
+    text-align: center;
+    width: 30%;
+    padding: 20px 10px;
+}
+
+
+.radio-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}   
+
+.capital-container{
+    width: 30%;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+    font-size: 30px;
+    text-align: center;
+}
+
+.table-head{
+    background-color: rgb(133, 0, 0);
+}
+
+th{
+    border: 2px solid black;
+}
+
+td{
+    background-color: rgb(5, 83, 109);
+    border: 2px solid black;
+}
+
+.table-interview-container{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px;
+    margin: 5px 0;
+    justify-content: space-evenly;
+    opacity: 75%
+}
+
+dl{
+    padding: 10px 10px;
+    margin: 5px 0;  
+}
+
+dt{
+    color:powderblue;
+}
