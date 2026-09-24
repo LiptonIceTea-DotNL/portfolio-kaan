@@ -15,7 +15,6 @@ h1{
 .nav-container{
     display: flex;
     flex-direction: row;
-    gap: 200px;
     justify-content: space-evenly;
     font-size: xx-large;
     background-color: rgba(0, 0, 0, 0.39);
@@ -24,7 +23,7 @@ h1{
 img{
     height: 60px;
     margin: 10px;
-    opacity: 10%;
+    opacity: 15%;
 }
 
 h2{
@@ -32,24 +31,25 @@ h2{
   color:rgb(50, 115, 255);
   font-size: 60px;
   opacity: 50%;
+  text-shadow: 3px 3px black;
 }
 
 a{
   padding: 25px 20px;
   background-color: #007bff;
   opacity: 30%;
+  text-shadow: 3px 3px black;
 }
 
 .section-container{
     display: flex;
-    flex-flow: column;
-    gap: 300px;
-    padding: 25px 20px;
-    margin: 20px 20px;
+    flex-direction: column;
+    gap: 60px;
 }
 
 p{
     font-size: 20px;
-    color:rgb(163, 153, 255);
-    padding-right: 70%;
+    color:rgb(169, 160, 248);
+    width: 56%;
+    text-shadow: 3px 3px black;
 }

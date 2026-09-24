@@ -1,0 +1,69 @@
+*{
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-image: url(/images/nacht.jpg);
+    background-size: cover;
+}
+
+.logo{
+    height: 60px;
+    margin: 10px;
+    opacity: 15%;
+}
+
+.goslar{
+    height: 300px;
+    width: 500px; 
+}
+
+p{
+    width: 50%;
+    text-align: center;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    text-shadow: 3px 3px black; 
+}
+
+h1{
+  text-align: center;
+  color:rgb(50, 115, 255);
+  font-size: 60px;
+  opacity: 50%;
+  text-shadow: 3px 3px black;
+}
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: xx-large;
+    background-color: rgba(0, 0, 0, 0.39);
+}
+
+a{
+  padding: 25px 20px;
+  background-color: #007bff;
+  opacity: 30%;
+  text-shadow: 3px 3px black;
+}
+
+.image-container{
+    display: flex;
+    flex-direction: row;
+    opacity: 70%;
+}
+
+video{
+    height: 300px;
+    width: 500px; 
+}
+
+.video-container{
+    display: flex;
+    flex-direction: row;
+    opacity: 60%;
+    padding: 10px 10px;
+    margin: 5px 0px;
+}
