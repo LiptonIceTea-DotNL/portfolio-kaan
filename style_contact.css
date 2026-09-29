@@ -1,0 +1,71 @@
+*{
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px black;
+}
+
+body{
+    background-image: url(/images/nacht.jpg);
+    background-size: cover;
+}
+
+.nav-links{
+  padding: 25px 20px;
+  background-color: #007bff;
+  opacity: 30%;
+  text-shadow: 3px 3px black;
+}
+
+.project-links{
+    background-color: #007bff;
+    padding: 20px 40px;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: xx-large;
+    background-color: rgba(0, 0, 0, 0.39);
+}
+
+.logo{
+    height: 60px;
+    margin: 10px;
+    opacity: 15%;
+}
+
+h1{
+  text-align: center;
+  color:rgb(50, 115, 255);
+  font-size: 60px;
+  opacity: 50%;
+  text-shadow: 3px 3px black;
+}
+
+p{
+    font-size: 1.5em;
+}
+
+.article-aside-container{
+    display: grid;
+    grid-template-columns: 50% 50%;     
+    padding: 50px 40px;
+    margin: 10px 0;
+}
+
+.temp{
+    height: 400px;
+    opacity: 60%;
+    padding: 50px 40px;
+    margin: 10px 0;
+}
+
+.contact-container{
+    padding: 50px 25px;
+    margin: 10px 0;
+}
