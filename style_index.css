@@ -39,6 +39,7 @@ a{
   background-color: #007bff;
   opacity: 30%;
   text-shadow: 3px 3px black;
+  text-decoration: none;
 }
 
 .section-container{
@@ -52,4 +53,5 @@ p{
     color:rgb(169, 160, 248);
     width: 56%;
     text-shadow: 3px 3px black;
+    opacity: 70%;
 }
