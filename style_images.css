@@ -17,6 +17,11 @@ body{
 .goslar{
     height: 300px;
     width: 500px; 
+    border-radius: 50px;
+}
+
+.goslar:hover{
+    filter: saturate(200%);
 }
 
 p{
@@ -62,6 +67,7 @@ a{
 video{
     height: 300px;
     width: 500px; 
+    border-radius: 50px;
 }
 
 .video-container{
