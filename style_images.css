@@ -25,10 +25,10 @@ body{
 }
 
 p{
-    width: 50%;
+    width: 25%;
     text-align: center;
     padding: 10px 10px;
-    margin: 10px 10px;
+    margin: 50px 100px;
     text-shadow: 3px 3px black; 
 }
 
@@ -72,7 +72,7 @@ video{
 
 .video-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
     opacity: 60%;
     padding: 10px 10px;
     margin: 5px 0px;
