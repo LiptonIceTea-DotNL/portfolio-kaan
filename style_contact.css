@@ -25,10 +25,6 @@ body{
     text-decoration: none;
 }
     
-h1{
-    text-align: center;
-    font-size: 30px;
-}
 .nav-container{
     display: flex;
     flex-direction: row;
@@ -45,10 +41,11 @@ h1{
 
 h1{
   text-align: center;
-  color:rgb(50, 115, 255);
+  color: silver;
   font-size: 60px;
   opacity: 50%;
   text-shadow: 3px 3px black;
+  
 }
 
 p{

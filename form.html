@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style__form.css">
+    <script src="/script.js" defer></script>
     <title>Formulier</title>
 </head>
 
 <body>
     <header>
         <nav class="nav-container">
-            <img src="/images/Logo.png">
+            <img src="/images/Logo.png" alt="Logo van een rode planeet met KB erop">
             <a class="nav-links" href="index.html">Home</a>
             <a class="nav-links" href="images.html">Afbeeldingen</a>
             <a class="nav-links" href="form.html">Formulier</a>
@@ -33,35 +34,38 @@
                         <br>
                         <div class="radio-container">
                             <label for="continent">Europa</label>
-                            <input type="radio" name="continent">
+                            <input type="radio" name="continent" value="#">
                             <label for="continent">Afrika</label>
-                            <input type="radio" name="continent">
+                            <input type="radio" name="continent" value="#">
                             <label for="continent">Azië</label>
-                            <input type="radio" name="continent">
+                            <input type="radio" name="continent" value="#">
                             <label for="continent">Oceanië</label>
-                            <input type="radio" name="continent">
+                            <input type="radio" name="continent" value="#">
                             <label for="continent">Noord-Amerika</label>
-                            <input type="radio" name="continent">
+                            <input type="radio" name="continent" value="#">
                             <label for="continent">Zuid-Amerika</label>
-                            <input type="radio" name="continent">
+                            <input type="radio" name="continent" value="#">
                             <label for="continent">Antarctica</label>
-                            <input type="radio" name="continent">
+                            <input type="radio" name="continent" value="#">
                         </div>
                     </div>
                     <div class="capital-container">
-                        <label for="capital-cities">Kies één of meer steden rond de wereld die u zou willen
+                        <label for="capital-cities">Kies één of meer (of geen) steden rond de wereld die u zou willen
                             bezoeken:</label>
-                        <label for="capital-germany">Berlijn</label>
-                        <input type="checkbox" name="capital-germany">
+                        <label for="city-brazil">Rio de Janeiro</label>
+                        <input type="checkbox" name="city-brazil" value="#">
                         <label for="capital-japan">Tokyo</label>
-                        <input type="checkbox" name="capital-japan">
-                        <label for="capital-cities">Madrid</label>
-                        <input type="checkbox" name="capital-spain">
+                        <input type="checkbox" name="capital-japan" value="#">
+                        <label for="city-us">New York City</label>
+                        <input type="checkbox" name="city-us" value="#">
                         <label for="capital-italy">Rome</label>
-                        <input type="checkbox" name="capital-italy">
-                        <label for="capital-china">Beijing</label>
-                        <input type="checkbox" name="capital-china">
+                        <input type="checkbox" name="capital-italy" value="#">
+                        <label for="city-australia">Sydney</label>
+                        <input type="checkbox" name="city-australia" value="#">
+                        <label for="capital-egypt">Cairo</label>
+                        <input type="checkbox" name="capital-egypt" value="#">
                     </div>
+                    <button>Gegevens invoeren</button>
                 </fieldset>
             </form>
         </section>

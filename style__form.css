@@ -1,7 +1,6 @@
 *{
     color: white;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: 2px 2px black;
 }
 
 body{
@@ -29,7 +28,7 @@ img{
 
 h1{
   text-align: center;
-  color:rgb(50, 115, 255);
+  color: silver;
   font-size: 60px;
   opacity: 50%;
   text-shadow: 3px 3px black;
@@ -47,19 +46,23 @@ fieldset{
     display: flex;
     flex-direction: row;
     height: 275px;
-    opacity: 70%;
-    background-color: rgb(7, 110, 110);
+    opacity: 60%;
+    background-color: #C19A6B;
     justify-content: space-evenly;
 }
 
 .text-container{
     padding: 20px 10px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .text{
     color: black;
-    height: 50px;
+    height: 100px;
     width: 300px;
 }
 
@@ -119,4 +122,14 @@ dl{
 
 dt{
     color:powderblue;
+}
+
+button{
+    height: 50px;
+    width: 100px;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    align-self: flex-end;
+    opacity: initial;
 }
