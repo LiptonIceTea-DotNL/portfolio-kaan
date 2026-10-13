@@ -22,7 +22,7 @@ formButton.addEventListener('click', function(event){
     event.preventDefault();
 });
 
-//Assigning variables to compare later
+formButton.addEventListener('click', function(){
 let europePoints = 0;
 let asiaPoints = 0;
 let africaPoints = 0;
@@ -30,8 +30,44 @@ let southAmericaPoints = 0;
 let northAmericaPoints = 0;
 let oceaniaPoints = 0;
 let antarcticaPoints = 0;
-
-europeRadio.addEventListener('change', function(){
-    europePoints = 1;
-    console.log(europePoints);
 });
+
+
+//Try to slop code the page redirect first, then use arrays and object to simplify
+
+/*
+europeRadio.addEventListener('change', function(){
+    const europeValue = europeRadio.checked;
+    console.log(europeValue);
+});
+
+africaRadio.addEventListener('change', function(){
+    const africaValue = africaRadio.checked;
+    console.log(africaValue);
+});
+
+asiaRadio.addEventListener('change', function(){
+    const asiaValue = asiaRadio.checked;
+    console.log(asiaValue);
+});
+
+oceaniaRadio.addEventListener('change', function(){
+    const oceaniaValue = oceaniaRadio.checked;
+    console.log(oceaniaValue);
+});
+
+northAmericaRadio.addEventListener('change', function(){
+    const northAmericaValue = northAmericaRadio.checked;
+    console.log(northAmericaValue);
+});
+
+southAmericaRadio.addEventListener('change', function(){
+    const southAmericaValue = southAmericaRadio.checked;
+    console.log(southAmericaValue);
+});
+
+antarcticaRadio.addEventListener('change', function(){
+    const antarcticaValue = antarcticaRadio.checked;
+    console.log(antarcticaValue);
+});
+*/
