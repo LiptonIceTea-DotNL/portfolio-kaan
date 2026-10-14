@@ -60,6 +60,7 @@ const continentPoints = {};
 //the value of every continent will be either 0/1 depending on if the radio is checked.
 //Also converting a boolean to a number to add later
 
+
 formButton.addEventListener('click', function(){
 
     for(const [continent, radio] of Object.entries(continentRadios)){
@@ -68,9 +69,46 @@ formButton.addEventListener('click', function(){
     for(const [city, checkbox] of Object.entries(cityCheckboxes)){
         cityPoints[city] = Number(checkbox.checked);
     };
+
+    switch (continentPoints.europe, cityPoints.rome){
+        case 1 && 1:
+             window.location.href = '/redirections/europe.html';
+        break;
+    };
+
+    switch (continentPoints.africa, cityPoints.cairo){
+        case 1 && 1:
+            window.location.href = '/redirections/africa.html';
+    };
+
+    switch (continentPoints.asia, cityPoints.tokyo){
+        case 1 && 1:
+            window.location.href = '/redirections/asia.html';
+    };
+
+    switch (continentPoints.oceania, cityPoints.sydney){
+        case 1 && 1:
+            window.location.href = '/redirections/oceania.html';
+    };
+
+    switch (continentPoints.northAmerica, cityPoints.york){
+        case 1 && 1:
+            window.location.href = '/redirections/north_america.html';
+    };
+
+    switch (continentPoints.southAmerica, cityPoints.rio){
+        case 1 && 1:
+            window.location.href = '/redirections/south_america.html';
+    };
+
+    switch (continentPoints.antarctica){
+        case 1:
+            window.location.href = '/redirections/antarctica.html';
+    };
+
     
     console.log(continentPoints.europe);
-    console.log(cityPoints.rio);
+    console.log(cityPoints.rome);
 }); 
 
 
