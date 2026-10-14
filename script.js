@@ -16,58 +16,61 @@ const oceaniaRadio = document.querySelector('.oceania');
 const northAmericaRadio = document.querySelector('.north-america');
 const southAmericaRadio = document.querySelector('.south-america');
 const antarcticaRadio = document.querySelector('.antarctica');
+const rioCheckbox = document.querySelector('.rio');
+const tokyoCheckbox = document.querySelector('.tokyo');
+const yorkCheckbox = document.querySelector('.york');
+const romeCheckbox = document.querySelector('.rome');
+const sydneyCheckbox = document.querySelector('.sydney');
+const cairoCheckbox = document.querySelector('.cairo');
+
 
 //Prevents button reloading page
 formButton.addEventListener('click', function(event){
     event.preventDefault();
 });
 
+//Making an object to add points to later for each continent
+const continentRadios = {
+    europe: europeRadio,
+    africa: africaRadio,
+    asia: asiaRadio,
+    oceania: oceaniaRadio,
+    northAmerica: northAmericaRadio,
+    southAmerica: southAmericaRadio,
+    antarctica: antarcticaRadio,
+};
+
+//Same thing here
+const cityCheckboxes = {
+    rio: rioCheckbox,
+    tokyo: tokyoCheckbox,
+    york: yorkCheckbox,
+    rome: romeCheckbox,
+    sydney: sydneyCheckbox,
+    cairo: cairoCheckbox,
+};
+
+//Storing points here
+const cityPoints = {};
+
+//Storing points here
+const continentPoints = {};
+
+//For every continent and radio button inside of my object's keys and values,
+//the value of every continent will be either 0/1 depending on if the radio is checked.
+//Also converting a boolean to a number to add later
+
 formButton.addEventListener('click', function(){
-let europePoints = 0;
-let asiaPoints = 0;
-let africaPoints = 0;
-let southAmericaPoints = 0;
-let northAmericaPoints = 0;
-let oceaniaPoints = 0;
-let antarcticaPoints = 0;
-});
+
+    for(const [continent, radio] of Object.entries(continentRadios)){
+    continentPoints[continent] = Number(radio.checked);
+    };
+    for(const [city, checkbox] of Object.entries(cityCheckboxes)){
+        cityPoints[city] = Number(checkbox.checked);
+    };
+    
+    console.log(continentPoints.europe);
+    console.log(cityPoints.rio);
+}); 
 
 
-//Try to slop code the page redirect first, then use arrays and object to simplify
-
-/*
-europeRadio.addEventListener('change', function(){
-    const europeValue = europeRadio.checked;
-    console.log(europeValue);
-});
-
-africaRadio.addEventListener('change', function(){
-    const africaValue = africaRadio.checked;
-    console.log(africaValue);
-});
-
-asiaRadio.addEventListener('change', function(){
-    const asiaValue = asiaRadio.checked;
-    console.log(asiaValue);
-});
-
-oceaniaRadio.addEventListener('change', function(){
-    const oceaniaValue = oceaniaRadio.checked;
-    console.log(oceaniaValue);
-});
-
-northAmericaRadio.addEventListener('change', function(){
-    const northAmericaValue = northAmericaRadio.checked;
-    console.log(northAmericaValue);
-});
-
-southAmericaRadio.addEventListener('change', function(){
-    const southAmericaValue = southAmericaRadio.checked;
-    console.log(southAmericaValue);
-});
-
-antarcticaRadio.addEventListener('change', function(){
-    const antarcticaValue = antarcticaRadio.checked;
-    console.log(antarcticaValue);
-});
-*/
