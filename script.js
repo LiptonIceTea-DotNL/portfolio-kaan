@@ -77,11 +77,16 @@ formButton.addEventListener('click', function(event){
     [continentPoints.antarctica, null, '/redirections/antarctica.html']
 ];
 
-        //Checking for 2 of the same answers
+        //Checking for 2 of the same answers, otherwise redirecting the user to a different page
         for (const [continent, city, url] of redirects) {
         if (continent === 1 && (city === null || city === 1)){
             window.location.href  = url;
             break;
+        } else if(continent === 1 && (city === 1 || city === 0)){
+            window.location.href = '/redirections/advice.html';
+            break;
+        } else{
+            window.location.href = '/redirections/none.html';
         };
     };
 }); 
