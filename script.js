@@ -25,11 +25,8 @@ const cairoCheckbox = document.querySelector('.cairo');
 
 
 //Prevents button reloading page
-formButton.addEventListener('click', function(event){
-    event.preventDefault();
-});
 
-//Making an object to add points to later for each continent
+//Making an object to compare points later
 const continentRadios = {
     europe: europeRadio,
     africa: africaRadio,
@@ -60,9 +57,8 @@ const continentPoints = {};
 //the value of every continent will be either 0/1 depending on if the radio is checked.
 //Also converting a boolean to a number to add later
 
-
-formButton.addEventListener('click', function(){
-
+formButton.addEventListener('click', function(event){
+    event.preventDefault();
     for(const [continent, radio] of Object.entries(continentRadios)){
     continentPoints[continent] = Number(radio.checked);
     };
@@ -70,45 +66,24 @@ formButton.addEventListener('click', function(){
         cityPoints[city] = Number(checkbox.checked);
     };
 
-    switch (continentPoints.europe, cityPoints.rome){
-        case 1 && 1:
-             window.location.href = '/redirections/europe.html';
-        break;
-    };
+    //Making an object to redirect the user to certain urls
+    const redirects = [
+    [continentPoints.europe, cityPoints.rome, '/redirections/europe.html'],
+    [continentPoints.africa, cityPoints.cairo, '/redirections/africa.html'],
+    [continentPoints.asia, cityPoints.tokyo, '/redirections/asia.html'],
+    [continentPoints.oceania, cityPoints.sydney, '/redirections/oceania.html'],
+    [continentPoints.northAmerica, cityPoints.york, '/redirections/north_america.html'],
+    [continentPoints.southAmerica, cityPoints.rio, '/redirections/south_america.html'],
+    [continentPoints.antarctica, null, '/redirections/antarctica.html']
+];
 
-    switch (continentPoints.africa, cityPoints.cairo){
-        case 1 && 1:
-            window.location.href = '/redirections/africa.html';
+        //Checking for 2 of the same answers
+        for (const [continent, city, url] of redirects) {
+        if (continent === 1 && (city === null || city === 1)){
+            window.location.href  = url;
+            break;
+        };
     };
-
-    switch (continentPoints.asia, cityPoints.tokyo){
-        case 1 && 1:
-            window.location.href = '/redirections/asia.html';
-    };
-
-    switch (continentPoints.oceania, cityPoints.sydney){
-        case 1 && 1:
-            window.location.href = '/redirections/oceania.html';
-    };
-
-    switch (continentPoints.northAmerica, cityPoints.york){
-        case 1 && 1:
-            window.location.href = '/redirections/north_america.html';
-    };
-
-    switch (continentPoints.southAmerica, cityPoints.rio){
-        case 1 && 1:
-            window.location.href = '/redirections/south_america.html';
-    };
-
-    switch (continentPoints.antarctica){
-        case 1:
-            window.location.href = '/redirections/antarctica.html';
-    };
-
-    
-    console.log(continentPoints.europe);
-    console.log(cityPoints.rome);
 }); 
 
 
