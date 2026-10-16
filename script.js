@@ -26,69 +26,44 @@ const cairoCheckbox = document.querySelector('.cairo');
 
 //Prevents button reloading page
 
-//Making an object to compare points later
-const continentRadios = {
-    europe: europeRadio,
-    africa: africaRadio,
-    asia: asiaRadio,
-    oceania: oceaniaRadio,
-    northAmerica: northAmericaRadio,
-    southAmerica: southAmericaRadio,
-    antarctica: antarcticaRadio,
-};
-
-//Same thing here
-const cityCheckboxes = {
-    rio: rioCheckbox,
-    tokyo: tokyoCheckbox,
-    york: yorkCheckbox,
-    rome: romeCheckbox,
-    sydney: sydneyCheckbox,
-    cairo: cairoCheckbox,
-};
-
-//Storing points here
-const cityPoints = {};
-
-//Storing points here
-const continentPoints = {};
-
-//For every continent and radio button inside of my object's keys and values,
-//the value of every continent will be either 0/1 depending on if the radio is checked.
-//Also converting a boolean to a number to add later
-
-formButton.addEventListener('click', function(event){
-    event.preventDefault();
-    for(const [continent, radio] of Object.entries(continentRadios)){
-    continentPoints[continent] = Number(radio.checked);
-    };
-    for(const [city, checkbox] of Object.entries(cityCheckboxes)){
-        cityPoints[city] = Number(checkbox.checked);
-    };
-
-    //Making an object to redirect the user to certain urls
-    const redirects = [
-    [continentPoints.europe, cityPoints.rome, '/redirections/europe.html'],
-    [continentPoints.africa, cityPoints.cairo, '/redirections/africa.html'],
-    [continentPoints.asia, cityPoints.tokyo, '/redirections/asia.html'],
-    [continentPoints.oceania, cityPoints.sydney, '/redirections/oceania.html'],
-    [continentPoints.northAmerica, cityPoints.york, '/redirections/north_america.html'],
-    [continentPoints.southAmerica, cityPoints.rio, '/redirections/south_america.html'],
-    [continentPoints.antarctica, null, '/redirections/antarctica.html']
+//Making an array to compare points later
+const allValues = [
+    [europeRadio, romeCheckbox, '/redirections/europe.html'],
+    [africaRadio, cairoCheckbox, '/redirections/africa.html'],
+    [asiaRadio, tokyoCheckbox, '/redirections/asia.html'],
+    [oceaniaRadio, sydneyCheckbox, '/redirections/oceania.html'],
+    [northAmericaRadio, yorkCheckbox, '/redirections/north_america.html'],
+    [southAmericaRadio, rioCheckbox, '/redirections/south_america.html'],
+    [antarcticaRadio, null, '/redirections/antarctica.html']
 ];
 
-        //Checking for 2 of the same answers, otherwise redirecting the user to a different page
-        for (const [continent, city, url] of redirects) {
-        if (continent === 1 && (city === null || city === 1)){
-            window.location.href  = url;
+//Same thing here
+
+
+//For every continent and radio button inside of my array I want to send the user to a different url
+//the value of every continent will be either true/false depending on if the radio is checked
+
+
+formButton.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    let selectedContinent = false;
+
+    for (const [continent, city, url] of allValues) {
+        if (continent.checked) {
+            selectedContinent = true;
+
+            if (city === null || city.checked) {
+                window.location.href = url;
+            } else {
+                window.location.href = '/redirections/advice.html';
+            }
             break;
-        } else if(continent === 1 && (city === 1 || city === 0)){
-            window.location.href = '/redirections/advice.html';
-            break;
-        } else{
-            window.location.href = '/redirections/none.html';
         };
     };
-}); 
+    if (!selectedContinent) {
+        window.location.href = '/redirections/none.html';
+    }
+});
 
 
