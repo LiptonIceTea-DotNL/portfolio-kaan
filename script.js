@@ -1,12 +1,3 @@
-/*
-Formulier project stappen:
-1. grab button and put in js variable
-2. assign values to each radio and checkbox
-3. tally up total points and store that in variables
-4. redirect user to different continent website depending on points
-*/
-
-
 //Putting HTML elements into variables
 const formButton = document.querySelector('.submit-button');
 const europeRadio = document.querySelector('.europe');
@@ -26,7 +17,7 @@ const cairoCheckbox = document.querySelector('.cairo');
 
 //Prevents button reloading page
 
-//Making an array to compare points later
+//Making an array to comapre later
 const allValues = [
     [europeRadio, romeCheckbox, '/redirections/europe.html'],
     [africaRadio, cairoCheckbox, '/redirections/africa.html'],
@@ -41,7 +32,7 @@ const allValues = [
 
 
 //For every continent and radio button inside of my array I want to send the user to a different url
-//the value of every continent will be either true/false depending on if the radio is checked
+//the value of every continent will be either true/false depending on if the radio/checkbox is checked
 
 
 formButton.addEventListener('click', function (event) {
