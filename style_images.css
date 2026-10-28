@@ -1,91 +1,91 @@
-*{
+* {
     color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-body{
+body {
     background-image: url(/images/nacht.jpg);
     background-size: cover;
 }
 
-.logo{
+.logo {
     height: 60px;
     margin: 10px;
     opacity: 15%;
 }
 
-.goslar{
+.nav-container, .image-container, .video-container, .p-link-box {
+    display: flex;
+}
+
+.nav-container, .image-container, .video-container {
+    flex-direction: row;
+}
+
+p, h1, footer, .wiki-link {
+    text-align: center;
+}
+
+.goslar, video {
     height: 300px;
-    width: 500px; 
+    width: 500px;
     border-radius: 50px;
 }
 
-.goslar:hover{
+.goslar:hover {
     filter: saturate(200%);
 }
 
-p{
+h1, a {
+    text-shadow: 3px 3px black;
+}
+
+p, .image-container, .video-container, footer, .wiki-link {
+    padding: 10px;
+}
+
+.image-container, .video-container {
+    opacity: 70%;
+    margin: 5px 0px;
+}
+
+p {
     width: 25%;
-    text-align: center;
-    padding: 10px 10px;
     margin: 50px 100px;
 }
 
-h1{
-  text-align: center;
-  color: silver;
-  font-size: 60px;
-  opacity: 50%;
-  text-shadow: 3px 3px black;
+h1 {
+    color: silver;
+    font-size: 60px;
+    opacity: 50%;
 }
 
-.nav-container{
-    display: flex;
-    flex-direction: row;
+.nav-container {
     justify-content: space-evenly;
     font-size: xx-large;
     background-color: rgba(0, 0, 0, 0.39);
 }
 
-a{
-  padding: 25px 20px;
-  background-color: #007bff;
-  opacity: 30%;
-  text-shadow: 3px 3px black;
-  text-decoration: none;
+a {
+    padding: 25px 20px;
+    background-color: #007bff;
+    opacity: 30%;
+    text-decoration: none;
 }
 
-.image-container{
-    display: flex;
-    flex-direction: row;
-    opacity: 70%;
-    padding: 10px 10px;
-    margin: 5px 0px;
+.video-container {
+    width: 100%;
 }
 
-video{
-    height: 300px;
-    width: 500px; 
-    border-radius: 50px;
-}
-
-.video-container{
-    display: flex;
-    flex-direction: row; 
-    opacity: 60%;
-    padding: 10px 10px;
-    margin: 5px 0px;
-}
-
-footer{
-    text-align: center;
-    padding: 10px 10px;
-}
-
-.wiki-link{
+.wiki-link {
     opacity: 80%;
     background-color: rgb(52, 0, 76);
     text-decoration: none;
-    padding: 15px;
+    height: 20px;
+    width: 10%;
+    margin-left: 155px;
 }
 
+.p-link-box {
+    flex-direction: column;
+}

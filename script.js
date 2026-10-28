@@ -15,9 +15,7 @@ const sydneyCheckbox = document.querySelector('.sydney');
 const cairoCheckbox = document.querySelector('.cairo');
 
 
-//Prevents button reloading page
-
-//Making an array to comapre later
+//Making an array to compare later
 const allValues = [
     [europeRadio, romeCheckbox, '/redirections/europe.html'],
     [africaRadio, cairoCheckbox, '/redirections/africa.html'],
@@ -28,15 +26,14 @@ const allValues = [
     [antarcticaRadio, null, '/redirections/antarctica.html']
 ];
 
-//Same thing here
+
 
 
 //For every continent and radio button inside of my array I want to send the user to a different url
-//the value of every continent will be either true/false depending on if the radio/checkbox is checked
-
-
+//The value of every continent will be either true/false depending on if the radio/checkbox is checked
 formButton.addEventListener('click', function (event) {
     event.preventDefault();
+        //Prevents button reloading page
 
     let selectedContinent = false;
 
