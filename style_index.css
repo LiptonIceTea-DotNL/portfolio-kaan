@@ -1,54 +1,79 @@
-*{
+* {
     color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-body{
+body {
     background-image: url(/images/nacht.jpg);
     background-size: cover;
 }
 
-.nav-container{
+.nav-container, .section-container{
     display: flex;
     flex-direction: row;
+}
+
+.nav-container {
     justify-content: space-evenly;
     font-size: xx-large;
     background-color: rgba(0, 0, 0, 0.39);
 }
 
-img{
+.section-container {
+    justify-content: space-between;
+}
+
+img {
     height: 60px;
     margin: 10px;
     opacity: 15%;
 }
 
-h2{
-  text-align: center;
-  color: silver;
-  font-size: 60px;
-  opacity: 50%;
-  text-shadow: 3px 3px black;
+h3, h2{
+    text-align: center;
 }
 
-a{
-  padding: 25px 20px;
-  background-color: #007bff;
-  opacity: 30%;
-  text-shadow: 3px 3px black;
-  text-decoration: none;
-}
-
-.section-container{
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-}
-
-p{
-    font-size: 20px;
-    color:rgb(169, 160, 248);
-    width: 45%;
+h3, h2, p, a{
     text-shadow: 3px 3px black;
+}
+
+h2 {
+    color: silver;
+    font-size: 60px;
+    opacity: 50%;
+}
+
+a {
+    padding: 25px 20px;
+    background-color: #007bff;
+    opacity: 30%;
+    text-decoration: none;
+}
+
+
+p {
+    font-size: 20px;
+    color: rgb(241, 209, 182);
+    width: 45%;
     opacity: 62%;
 }
 
+dl {
+    padding: 10px 10px;
+    margin: 5px 0;
+    opacity: 80%;
+}
+
+dt {
+    color: #ffb028
+}
+
+dd {
+    color: #C8A2C8;
+}
+
+h3{
+    color: silver;
+    font-size: 25px;
+    opacity: 50%;
+}

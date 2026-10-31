@@ -8,13 +8,36 @@ body{
     background-size: cover;
 }
 
-h1{
-    text-align: center;
-    font-size: 30px;
-}
-.nav-container{
+.nav-container, fieldset, .text-container, .radio-container, .capital-container, article{
     display: flex;
+}
+
+h1, a{
+    text-shadow: 3px 3px black;
+}
+
+.nav-container, fieldset{
     flex-direction: row;
+}
+
+h1, .text-container, .continent-container, .radio-container, .capital-container, table{
+    text-align: center;
+}
+
+.text-container, .radio-container, .capital-container{
+    flex-direction: column;
+}
+
+th, td{
+    border: 2px solid black;
+}
+
+.continent-container, .capital-container{
+    width: 30%;
+    padding: 20px 10px;
+}
+
+.nav-container{
     justify-content: space-evenly;
     font-size: xx-large;
     background-color: rgba(0, 0, 0, 0.39);
@@ -27,101 +50,56 @@ img{
 }
 
 h1{
-  text-align: center;
   color: silver;
   font-size: 60px;
   opacity: 50%;
-  text-shadow: 3px 3px black;
 }
 
 a{
   padding: 25px 20px;
   background-color: #007bff;
   opacity: 30%;
-  text-shadow: 3px 3px black;
   text-decoration: none;
 }
 
 fieldset{
-    display: flex;
-    flex-direction: row;
     height: 275px;
     opacity: 60%;
-    background-color: #C19A6B;
+    background-color: #8d4900;
     justify-content: space-evenly;
 }
 
 .text-container{
     padding: 20px 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    gap: 20px;
 }
 
 .text{
     color: black;
     height: 100px;
     width: 300px;
-}
-
-.continent-container{
-    text-align: center;
-    width: 30%;
-    padding: 20px 10px;
-}
-
-
-.radio-container{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}   
-
-.capital-container{
-    width: 30%;
-    padding: 20px 10px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    font-size: larger;
 }
 
 table{
     border-collapse: collapse;
     font-size: 30px;
-    text-align: center;
+    padding: 10px 10px;
+    margin: 5px 0;
+    opacity: 75%
+}
+
+article{
+    justify-content: center;
 }
 
 .table-head{
-    background-color: rgb(133, 0, 0);
-}
-
-th{
-    border: 2px solid black;
+    background-color: rgb(105, 1, 1);
 }
 
 td{
     background-color: rgb(5, 83, 109);
-    border: 2px solid black;
-}
-
-.table-interview-container{
-    display: flex;
-    flex-direction: row;
-    padding: 10px 10px;
-    margin: 5px 0;
-    justify-content: space-evenly;
-    opacity: 75%
-}
-
-dl{
-    padding: 10px 10px;
-    margin: 5px 0;  
-}
-
-dt{
-    color:powderblue;
 }
 
 button{
@@ -131,5 +109,4 @@ button{
     padding: 10px;
     margin: 10px;
     align-self: flex-end;
-    opacity: initial;
 }

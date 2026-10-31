@@ -9,11 +9,14 @@ body{
     text-shadow: 3px 3px black;
 }
 
+.nav-links, .project-links{
+    text-decoration: none;
+}
+
 .nav-links{
   padding: 25px 20px;
   background-color: #007bff;
   opacity: 30%;
-  text-shadow: 3px 3px black;
   text-decoration: none;
 }
 
@@ -22,7 +25,6 @@ body{
     padding: 20px 40px;
     margin: 50px;
     opacity: 50%;
-    text-decoration: none;
 }
     
 .nav-container{
@@ -44,7 +46,6 @@ h1{
   color: silver;
   font-size: 60px;
   opacity: 50%;
-  text-shadow: 3px 3px black;
   
 }
 
