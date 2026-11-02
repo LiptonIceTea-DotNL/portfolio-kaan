@@ -1,0 +1,11 @@
+img {
+    width: 400px;
+    height: 300px;
+    opacity: 85%;
+}
+
+section {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+}

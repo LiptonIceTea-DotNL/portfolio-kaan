@@ -8,10 +8,43 @@ body{
     background-size: cover;
 }
 
+<<<<<<< Updated upstream:style__form.css
 h1{
+=======
+.nav-container, fieldset, .text-container, .radio-container, .capital-container, article, main{
+    display: flex;
+}
+
+h1, a{
+    text-shadow: 3px 3px black;
+}
+
+.nav-container, fieldset{
+    flex-direction: row;
+}
+
+h1, .text-container, .continent-container, .radio-container, .capital-container, table{
+>>>>>>> Stashed changes:css/style__form.css
     text-align: center;
     font-size: 30px;
 }
+<<<<<<< Updated upstream:style__form.css
+=======
+
+.text-container, .radio-container, .capital-container, main{
+    flex-direction: column;
+}
+
+th, td{
+    border: 2px solid black;
+}
+
+.continent-container, .capital-container{
+    width: 30%;
+    padding: 20px 10px;
+}
+
+>>>>>>> Stashed changes:css/style__form.css
 .nav-container{
     display: flex;
     flex-direction: row;

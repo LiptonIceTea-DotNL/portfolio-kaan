@@ -1,0 +1,11 @@
+body {
+    background-image: url(/images/africa/starry-sky.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #040b14;
+    color: silver;
+    font-size: 2em;
+    font-weight: 900;
+    text-shadow: 2px 1px black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

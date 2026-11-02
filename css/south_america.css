@@ -1,0 +1,10 @@
+body {
+    background-image: url(/images/south_america/south-america-background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #32312f;
+    color: rgb(244, 224, 167);
+    text-shadow: 2px 1px black;
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

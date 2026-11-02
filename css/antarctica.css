@@ -1,0 +1,11 @@
+body {
+    background-image: url(/images/antarctica/antarctica-background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #4b3c61;
+    color: rgb(184, 243, 223);
+    font-size: 2em;
+    text-align: start;
+    text-shadow: 2px 1px black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
