@@ -17,13 +17,13 @@ const cairoCheckbox = document.querySelector('.cairo');
 
 //Making an array to compare later
 const allValues = [
-    [europeRadio, romeCheckbox, '/redirections/europe.html'],
-    [africaRadio, cairoCheckbox, '/redirections/africa.html'],
-    [asiaRadio, tokyoCheckbox, '/redirections/asia.html'],
-    [oceaniaRadio, sydneyCheckbox, '/redirections/oceania.html'],
-    [northAmericaRadio, yorkCheckbox, '/redirections/north_america.html'],
-    [southAmericaRadio, rioCheckbox, '/redirections/south_america.html'],
-    [antarcticaRadio, null, '/redirections/antarctica.html']
+    [europeRadio, romeCheckbox, 'redirections/europe.html'],
+    [africaRadio, cairoCheckbox, 'redirections/africa.html'],
+    [asiaRadio, tokyoCheckbox, 'redirections/asia.html'],
+    [oceaniaRadio, sydneyCheckbox, 'redirections/oceania.html'],
+    [northAmericaRadio, yorkCheckbox, 'redirections/north_america.html'],
+    [southAmericaRadio, rioCheckbox, 'redirections/south_america.html'],
+    [antarcticaRadio, null, 'redirections/antarctica.html']
 ];
 
 
@@ -44,13 +44,13 @@ formButton.addEventListener('click', function (event) {
             if (city === null || city.checked) {
                 window.location.href = url;
             } else {
-                window.location.href = '/redirections/advice.html';
+                window.location.href = 'redirections/advice.html';
             }
             break;
         };
     };
     if (!selectedContinent) {
-        window.location.href = '/redirections/none.html';
+        window.location.href = 'redirections/none.html';
     }
 });
 
