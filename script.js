@@ -52,6 +52,7 @@ formButton.addEventListener('click', function (event) {
     if (!selectedContinent) {
         window.location.href = 'redirections/none.html';
     }
+    console.log("defxvghbxfvbhxfcvbxcvbxcvbxcdsxfgsdfgsdfgsdfgdsfgsdgdsgsdfgbug");
 });
 
 
