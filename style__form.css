@@ -1,88 +1,106 @@
-*{
+* {
     color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-body{
+body {
     background-image: url(images/nacht.jpg);
     background-size: cover;
 }
 
-.nav-container, fieldset, .text-container, .radio-container, .capital-container, article{
+.nav-container,
+fieldset,
+.text-container,
+.radio-container,
+.capital-container,
+article {
     display: flex;
 }
 
-h1, a{
+h1,
+a,
+p {
     text-shadow: 3px 3px black;
 }
 
-.nav-container, fieldset{
+.nav-container,
+fieldset {
     flex-direction: row;
 }
 
-h1, .text-container, .continent-container, .radio-container, .capital-container, table{
+h1,
+.text-container,
+.continent-container,
+.radio-container,
+.capital-container,
+table {
     text-align: center;
 }
 
-.text-container, .radio-container, .capital-container{
+.text-container,
+.radio-container,
+.capital-container {
     flex-direction: column;
 }
 
-th, td{
+th,
+td {
     border: 2px solid black;
 }
 
-.continent-container, .capital-container{
+.continent-container,
+.capital-container {
     width: 30%;
     padding: 20px 10px;
 }
 
-.nav-container{
+.nav-container {
     justify-content: space-evenly;
     font-size: xx-large;
     background-color: rgba(0, 0, 0, 0.39);
 }
 
-img{
+img {
     height: 60px;
     margin: 10px;
     opacity: 15%;
 }
 
-h1{
-  color: silver;
-  font-size: 60px;
-  opacity: 50%;
+h1,
+p {
+    color: silver;
+    font-size: 60px;
+    opacity: 50%;
 }
 
-a{
-  padding: 25px 20px;
-  background-color: #007bff;
-  opacity: 30%;
-  text-decoration: none;
+a {
+    padding: 25px 20px;
+    background-color: #007bff;
+    opacity: 30%;
+    text-decoration: none;
 }
 
-fieldset{
+fieldset {
     height: 275px;
     opacity: 60%;
     background-color: #8d4900;
     justify-content: space-evenly;
 }
 
-.text-container{
+.text-container {
     padding: 20px 10px;
     align-items: center;
     gap: 20px;
 }
 
-.text{
+.text {
     color: black;
     height: 100px;
     width: 300px;
     font-size: larger;
 }
 
-table{
+table {
     border-collapse: collapse;
     font-size: 30px;
     padding: 10px 10px;
@@ -90,19 +108,19 @@ table{
     opacity: 75%
 }
 
-article{
+article {
     justify-content: center;
 }
 
-.table-head{
+.table-head {
     background-color: rgb(105, 1, 1);
 }
 
-td{
+td {
     background-color: rgb(5, 83, 109);
 }
 
-button{
+button {
     height: 50px;
     width: 100px;
     color: black;

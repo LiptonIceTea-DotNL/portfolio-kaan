@@ -31,7 +31,7 @@ const allValues = [
 
 //For every continent and radio button inside of my array I want to send the user to a different url
 //The value of every continent will be either true/false depending on if the radio/checkbox is checked
-formButton.addEventListener('click', function (event) {
+formButton.addEventListener('click', (event) => {
     event.preventDefault();
         //Prevents button reloading page
 

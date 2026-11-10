@@ -8,7 +8,8 @@ body {
     background-size: cover;
 }
 
-.nav-container, .section-container{
+.nav-container,
+.section-container {
     display: flex;
     flex-direction: row;
 }
@@ -29,12 +30,18 @@ img {
     opacity: 15%;
 }
 
-h3, h2{
+h3,
+h2 {
     text-align: center;
 }
 
-h3, h2, p, a{
-    text-shadow: 3px 3px black;
+h3,
+h2,
+p,
+a,
+dt,
+dd {
+    text-shadow: 2px 2px black;
 }
 
 h2 {
@@ -65,14 +72,16 @@ dl {
 }
 
 dt {
-    color: #ffb028
+    color: #ffb028;
+    opacity: 80%;
 }
 
 dd {
     color: #C8A2C8;
+    opacity: 80%;
 }
 
-h3{
+h3 {
     color: silver;
     font-size: 25px;
     opacity: 50%;

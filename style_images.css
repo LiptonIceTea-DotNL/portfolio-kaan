@@ -14,19 +14,28 @@ body {
     opacity: 15%;
 }
 
-.nav-container, .image-container, .video-container, .p-link-box {
+.nav-container,
+.image-container,
+.video-container,
+.p-link-box {
     display: flex;
 }
 
-.nav-container, .image-container, .video-container {
+.nav-container,
+.image-container,
+.video-container {
     flex-direction: row;
 }
 
-p, h1, footer, .wiki-link {
+p,
+h1,
+footer,
+.wiki-link {
     text-align: center;
 }
 
-.goslar, video {
+.goslar,
+video {
     height: 300px;
     width: 500px;
     border-radius: 50px;
@@ -36,15 +45,21 @@ p, h1, footer, .wiki-link {
     filter: saturate(200%);
 }
 
-h1, a {
+h1,
+a {
     text-shadow: 3px 3px black;
 }
 
-p, .image-container, .video-container, footer, .wiki-link {
+p,
+.image-container,
+.video-container,
+footer,
+.wiki-link {
     padding: 10px;
 }
 
-.image-container, .video-container {
+.image-container,
+.video-container {
     opacity: 70%;
     margin: 5px 0px;
 }
