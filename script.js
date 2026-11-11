@@ -56,3 +56,10 @@ formButton.addEventListener('click', (event) => {
 });
 
 
+let optie1 = 0;
+let optie2 = 0;
+let optie3 = 0;
+
+if (optie1 > optie2 && optie1 > optie3){
+    //verstuur hier gebruiker naar juiste resulaat
+}
